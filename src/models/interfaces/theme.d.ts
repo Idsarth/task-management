@@ -18,8 +18,11 @@ declare namespace ITheme {
     errorColor: string
   }
 
-  export interface ITypography {
+  export interface IFonts {
     fontFamily: string
   }
-  
+
+  export interface ISpacing {
+
+  }
 }

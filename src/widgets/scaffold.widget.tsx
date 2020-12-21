@@ -7,7 +7,7 @@ type Props = {
   backgroundColor?: string
   appBar?: ReactNode
   bottomNavigationBar?: ReactNode
-  children?: ReactNodeArray
+  children?: ReactNode | ReactNodeArray
 }
 
 export const Scaffold:React.FC<Props> = (props):ReactElement => {
