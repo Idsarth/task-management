@@ -4,12 +4,16 @@ import {
 } from 'react-native'
 
 // Import widgets
-import { Scaffold } from '@widgets'
+import { Scaffold } from '../widgets'
+
+// Import components
+import { LinealChart, Header } from '../components'
 
 export const HomePage:React.FC = ():ReactElement => {
   return (
     <Scaffold>
-      <Text>HomPage</Text>
+      <Header />
+      <LinealChart />
     </Scaffold>
   )
 }

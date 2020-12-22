@@ -1,1 +1,1 @@
-export * from '@models/interfaces/theme'
+export * from './interfaces/theme.interface'

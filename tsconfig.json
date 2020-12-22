@@ -39,28 +39,7 @@
     /* Module Resolution Options */
     "moduleResolution": "node",               /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
     "baseUrl": "./",                       /* Base directory to resolve non-absolute module names. */
-    "paths": {
-      "@components/*": ["src/components/*"],
-      "@components": ["src/components"],
-      "@widgets/*": ["src/widgets/*"],
-      "@widgets": ["src/widgets"],
-      "@context/*": ["src/context/*"],
-      "@context": ["src/context"],
-      "@hooks/*": ["src/hooks/*"],
-      "@hooks": ["src/hooks"],
-      "@pages/*": ["src/pages/*"],
-      "@pages": ["src/pages"],
-      "@navigation/*": ["src/navigation/*"],
-      "@navigation": ["src/navigation"],
-      "@static/*": ["src/static/*"],
-      "@static": ["src/static"],
-      "@localization/*": ["src/localization/*"],
-      "@localization": ["src/localization"],
-      "@styled/*": ["src/styled/*"],
-      "@styled": ["src/styled"],
-      "@models/*": ["src/models/*"],
-      "@models": ["src/models"]
-    },
+    "paths": {},
     // "rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */
     // "typeRoots": [],                       /* List of folders to include type definitions from. */
     // "types": [],                           /* Type declaration files to be included in compilation. */

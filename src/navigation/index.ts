@@ -1,4 +1,4 @@
-export { AppRoutes } from '@navigation/app-router'
-export { AuthNavigator } from '@navigation/auth.navigator'
-export { AppNavigator } from '@navigation/app.navigator'
-export { HomeNavigator } from '@navigation/home.navigator'
+export { AppRoutes } from './app-router'
+export { AuthNavigator } from './auth.navigator'
+export { AppNavigator } from './app.navigator'
+export { HomeNavigator } from './home.navigator'

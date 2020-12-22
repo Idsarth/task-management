@@ -2,15 +2,15 @@ import React, { ReactElement } from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
 
 // Import pages
-import { SignInPage } from '@pages'
+import { SignInPage } from '../pages'
 
 // Import routes
-import { AppRoutes } from '@navigation'
+import { AppRoutes } from '.'
 
 const Stack = createStackNavigator()
 export const AuthNavigator:React.FC = ():ReactElement => {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator headerMode={'none'}>
       <Stack.Screen
         name={AppRoutes.SIGN_IN}
         component={SignInPage}

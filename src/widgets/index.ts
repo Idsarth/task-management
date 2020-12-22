@@ -1,2 +1,3 @@
-export { AppBar } from '@widgets/appbar.widget'
-export { Scaffold } from '@widgets/scaffold.widget'
+export { AppBar } from './appbar.widget'
+export { Scaffold } from './scaffold.widget'
+export { SizedBox } from './sized-box.widget'

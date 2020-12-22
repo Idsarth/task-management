@@ -1,3 +1,12 @@
-export { breakpoints } from '@styled/theme/breakpoints.theme'
-export { colors } from '@styled/theme/colors.theme'
-export {} from '@styled/theme/typography.theme'
+import { ITheme } from '../../models'
+
+// Import styled
+import { colors } from './colors.theme'
+import { typography } from './typography.theme'
+
+export const LightTheme: ITheme = {
+  ...colors,
+  ...typography
+}
+
+export const DarkTheme = {}

@@ -7,13 +7,13 @@ import {
   AppRoutes,
   AuthNavigator,
   HomeNavigator
-} from '@navigation'
+} from '.'
 
 const Stack = createStackNavigator()
 export const AppNavigator:React.FC = ():ReactElement => {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator initialRouteName={AppRoutes.HOME} headerMode={'none'}>
         <Stack.Screen name={AppRoutes.AUTH} component={AuthNavigator} />
         <Stack.Screen name={AppRoutes.HOME} component={HomeNavigator} />
       </Stack.Navigator>

@@ -1,7 +1,11 @@
 import React, { ReactElement, ReactNode, ReactNodeArray } from 'react'
 import {
-  ScrollView
+  ScrollView,
+  SafeAreaView
 } from 'react-native'
+
+// Import hooks
+import { useTheme } from '../hooks'
 
 type Props = {
   backgroundColor?: string
@@ -11,9 +15,10 @@ type Props = {
 }
 
 export const Scaffold:React.FC<Props> = (props):ReactElement => {
+  const { theme } = useTheme()
   const {
     appBar,
-    backgroundColor,
+    backgroundColor = theme.backgroundScaffoldColor,
     bottomNavigationBar,
     children,
   } = props
@@ -24,7 +29,9 @@ export const Scaffold:React.FC<Props> = (props):ReactElement => {
       style={{ flexGrow: 1, backgroundColor }}
       contentContainerStyle={{}}
     >
-      {children}
+      <SafeAreaView style={{ flexGrow: 1 }}>
+        {children}
+      </SafeAreaView>
     </ScrollView>
   )
 }
