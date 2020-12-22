@@ -7,6 +7,9 @@ import {
 // Import hooks
 import { useTheme } from '../hooks'
 
+// Import styled
+import { scaffoldStyled } from '../styled'
+
 type Props = {
   backgroundColor?: string
   appBar?: ReactNode
@@ -16,9 +19,9 @@ type Props = {
 
 export const Scaffold:React.FC<Props> = (props):ReactElement => {
   const { theme } = useTheme()
+  const styles = scaffoldStyled({ theme: theme, variantStyled: { }})
   const {
     appBar,
-    backgroundColor = theme.backgroundScaffoldColor,
     bottomNavigationBar,
     children,
   } = props
@@ -26,10 +29,10 @@ export const Scaffold:React.FC<Props> = (props):ReactElement => {
     <ScrollView
       keyboardShouldPersistTaps={'always'}
       showsVerticalScrollIndicator={false}
-      style={{ flexGrow: 1, backgroundColor }}
+      style={styles.scaffold}
       contentContainerStyle={{}}
     >
-      <SafeAreaView style={{ flexGrow: 1 }}>
+      <SafeAreaView style={styles.scaffold}>
         {children}
       </SafeAreaView>
     </ScrollView>

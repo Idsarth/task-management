@@ -9,14 +9,14 @@ export const colors: IColors = {
   shadowColor: '',
   borderColor: '',
 
-  successColor: '#2FD775',
-  errorColor: '#FF5353',
-  warningColor: '#FFD134',
+  successColor: '#DDFAE4',
+  errorColor: '#FFECEB',
+  warningColor: '#FDF0E1',
 
   textPrimaryColor: '#233242',
-  textSecondaryColor: '#F0F1F3',
-  textSuccessColor: '',
-  textErrorColor: '',
-  textWarningColor: '',
+  textSecondaryColor: '#728298',
+  textSuccessColor: '#2FD775',
+  textErrorColor: '#FF5353',
+  textWarningColor: '#FFD134',
 
 }
