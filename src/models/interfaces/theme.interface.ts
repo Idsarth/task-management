@@ -9,7 +9,9 @@ export interface IColors {
   textErrorColor: string
   textWarningColor: string
 
+  textButtonColor: string
   backgroundScaffoldColor: string
+  backgroundButtonColor: string
 
   iconColor: string
   borderColor: string

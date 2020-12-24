@@ -13,7 +13,7 @@ const Stack = createStackNavigator()
 export const AppNavigator:React.FC = ():ReactElement => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName={AppRoutes.HOME} headerMode={'none'}>
+      <Stack.Navigator initialRouteName={AppRoutes.AUTH} headerMode={'none'}>
         <Stack.Screen name={AppRoutes.AUTH} component={AuthNavigator} />
         <Stack.Screen name={AppRoutes.HOME} component={HomeNavigator} />
       </Stack.Navigator>

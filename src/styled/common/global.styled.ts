@@ -3,12 +3,12 @@ import { StyleSheet } from 'react-native'
 // Import models
 import { ITheme } from '../../models'
 
-type Params = {
+type Styled = {
   theme: ITheme,
   variantStyled: {}
 }
 
-export const globalStyled = ({ theme, variantStyled }:Params) => {
+export const globalStyled = ({ theme, variantStyled }:Styled) => {
   return StyleSheet.create({
     // FONTS **********
     bold: {
