@@ -7,7 +7,7 @@ import {
 import { Scaffold } from '../../widgets'
 
 // Import components
-import { Button } from '../../components'
+import { Button } from '../../components/common'
 
 // Import hooks
 import { useTheme } from '../../hooks'
@@ -16,8 +16,8 @@ import { useTheme } from '../../hooks'
 import { LightTheme } from '../../styled'
 
 export const SignInPage:React.FC = (): ReactElement => {
-  const onPressed = useCallback(() => {
-
+  const onPressed = useCallback(async () => {
+    
   }, [])
 
   return (

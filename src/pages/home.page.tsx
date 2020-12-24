@@ -9,9 +9,11 @@ import { Scaffold, SizedBox } from '../widgets'
 
 // Import components
 import {
-  LinealChart,
   Header
-} from '../components'
+} from '../components/common'
+import {
+  LinealChart
+} from '../components/charts'
 
 // Import styles
 import { globalStyled, LightTheme } from '../styled'

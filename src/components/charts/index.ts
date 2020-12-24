@@ -1,0 +1,1 @@
+export { LinealChart } from './lineal-chart.component'
