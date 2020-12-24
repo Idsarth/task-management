@@ -20,7 +20,7 @@ import { BottomNavigation } from '../components'
 const BottomTab = createBottomTabNavigator()
 export const HomeNavigator:React.FC = ():ReactElement => {
   return (
-    <BottomTab.Navigator tabBar={props => <BottomNavigation {...props} />}>
+    <BottomTab.Navigator>
       <BottomTab.Screen name={AppRoutes.HOME} component={HomePage} />
       <BottomTab.Screen name={AppRoutes.STUDENT} component={StudentPage} />
 
