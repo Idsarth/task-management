@@ -7,13 +7,25 @@ import {
 import { AppRoutes } from '.'
 
 // Import pages
-import { HomePage } from '../pages'
+import {
+  HomePage,
+  ProfilePage,
+  StudentPage,
+  StatisticPage,
+} from '../pages'
 
-const Stack = createStackNavigator()
+// Import components
+import { BottomNavigation } from '../components'
+
+const BottomTab = createBottomTabNavigator()
 export const HomeNavigator:React.FC = ():ReactElement => {
   return (
-    <Stack.Navigator headerMode={'none'}>
-      <Stack.Screen name={AppRoutes.HOME} component={HomePage} />
-    </Stack.Navigator>
+    <BottomTab.Navigator tabBar={props => <BottomNavigation {...props} />}>
+      <BottomTab.Screen name={AppRoutes.HOME} component={HomePage} />
+      <BottomTab.Screen name={AppRoutes.STUDENT} component={StudentPage} />
+
+      <BottomTab.Screen name={AppRoutes.STATISTIC} component={StatisticPage} />
+      <BottomTab.Screen name={AppRoutes.PROFILE} component={ProfilePage} />
+    </BottomTab.Navigator>
   )
 }

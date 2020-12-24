@@ -4,5 +4,8 @@ export enum AppRoutes {
   SIGN_UP = '/sign-up',
 
   HOME = '/',
-  PROFILE = ''
+  PROFILE = '/profile',
+  STUDENT = '/student',
+
+  STATISTIC = '/statistic'
 }

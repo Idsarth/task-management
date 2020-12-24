@@ -1,2 +1,5 @@
 export { HomePage } from './home.page'
 export { SignInPage } from './auth/sign-in.page'
+export { ProfilePage } from './profile/profile.page'
+export { StudentPage } from './student/student.page'
+export { StatisticPage } from './statistic/statistic.page'

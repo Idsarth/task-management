@@ -14,7 +14,7 @@ export const scaffoldStyled = ({ theme, variantStyled }: Params) => {
   const {} = variantStyled
   return StyleSheet.create({
     scaffold: {
-      paddingHorizontal: 15,
+      // paddingHorizontal: 15,
       flexGrow: 1,
       backgroundColor: theme.backgroundScaffoldColor
     }
