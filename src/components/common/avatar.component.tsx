@@ -1,22 +1,29 @@
 import React, { ReactElement } from 'react'
 import {
+  StyleProp,
   View
 } from 'react-native'
-import FastImage, { Source, ResizeMode } from 'react-native-fast-image'
+import FastImage, { Source, ResizeMode, ImageStyle } from 'react-native-fast-image'
 
 // Import styled
 import { avatarStyled, LightTheme } from '../../styled'
 
 type Props = {
   source: Source,
-  width?: number
-  height?: number
+  size: 'small' | 'medium' | 'large' | 'xlarge'
   rounded?: boolean
   resizeMode?: ResizeMode
   decorated?: boolean
+  styles?: StyleProp<ImageStyle>
 }
 
-export const Avatar:React.FC<Props> = ({ source, resizeMode, decorated, ...rest }):ReactElement => {
+export const Avatar:React.FC<Props> = ({
+  source,
+  resizeMode,
+  decorated,
+  styles: customStyles,
+  ...rest
+}):ReactElement => {
   const styles = avatarStyled({ theme: LightTheme, variantStyled: { ...rest, decorated } })
 
   if(decorated) {
@@ -24,7 +31,7 @@ export const Avatar:React.FC<Props> = ({ source, resizeMode, decorated, ...rest 
       <View style={styles.decorator}>
         <FastImage
           resizeMode={resizeMode}
-          style={styles.avatar}
+          style={[customStyles, styles.avatar]}
           source={source}
         />
       </View>
@@ -34,7 +41,7 @@ export const Avatar:React.FC<Props> = ({ source, resizeMode, decorated, ...rest 
   return (
     <FastImage
       resizeMode={resizeMode}
-      style={styles.avatar}
+      style={[customStyles, styles.avatar]}
       source={source}
     />
   )

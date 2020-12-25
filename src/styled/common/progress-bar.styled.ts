@@ -16,25 +16,27 @@ export const progressBarStyled = ({ theme, variantStyled }: Styled) => {
   } = variantStyled
   return StyleSheet.create({
     progressBar: {
-      height: 5,
-      width: '100%',
-      borderRadius: 200,
       backgroundColor: '#E0E4E8',
-      position: 'relative'
+      position: 'relative',
+      borderRadius: 200,
+      width: '100%',
+      height: 5,
     },
     progress: {
-      borderRadius: 200,
-      backgroundColor: 'green',
+      backgroundColor: theme.textSuccessColor,
+      width: `${progress}%`,
       position: 'absolute',
+      borderRadius: 200,
+      height: '100%',
       top: 0,
       left: 0,
-      width: `${progress}%`,
-      height: '100%'
     },
     value: {
+      color: theme.textSecondaryColor,
       position: 'absolute',
       bottom: '100%',
-      right: 0
+      fontSize: 13,
+      right: 0,
     }
   })
 }

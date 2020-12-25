@@ -8,9 +8,10 @@ export interface IColors {
   textSuccessColor: string
   textErrorColor: string
   textWarningColor: string
-
   textButtonColor: string
+
   backgroundScaffoldColor: string
+  backgroundCardColor: string
   backgroundButtonColor: string
 
   iconColor: string

@@ -14,12 +14,12 @@ export const scaffoldStyled = ({ theme, variantStyled }: Styled) => {
   const {} = variantStyled
   return StyleSheet.create({
     scaffold: {
-      paddingHorizontal: 15,
+      backgroundColor: theme.backgroundScaffoldColor,
+      paddingHorizontal: 10,
       flexGrow: 1,
-      backgroundColor: theme.backgroundScaffoldColor
     },
     safeArea: {
-      flexGrow: 1
+      flexGrow: 1,
     }
   })
 }

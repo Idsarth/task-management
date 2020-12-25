@@ -6,14 +6,21 @@ import {
 // Import components
 import { ListsTechnologies } from '../../components/lists'
 import {
-  Scaffold
+  Scaffold,
+  SizedBox
 } from '../../components/common'
 
+// Import styled
+import { globalStyled, LightTheme } from '../../styled'
+
 export const StudentPage:React.FC = ():ReactElement => {
+  const global = globalStyled({ theme: LightTheme, variantStyled: {} })
   return (
     <Scaffold>
-      <Text>StudentPage</Text>
+      <SizedBox height={20} />
+      <Text style={global.title}>Categories</Text>
 
+      <SizedBox height={20} />
       <ListsTechnologies />
     </Scaffold>
   )

@@ -1,13 +1,14 @@
 import { IColors } from '../../models'
 
 export const colors: IColors = {
-  backgroundScaffoldColor: '#FFFFFF',
+  backgroundScaffoldColor: '#FBFBFB',
+  backgroundCardColor: '#FFFFFF',
   backgroundButtonColor: '#000',
   primaryColor: '',
   secondaryColor: '',
   accentColor: '',
-  iconColor: '',
-  shadowColor: '',
+  iconColor: '#8A95A5',
+  shadowColor: '#000',
   borderColor: '',
 
   successColor: '#DDFAE4',

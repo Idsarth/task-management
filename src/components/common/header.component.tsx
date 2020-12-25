@@ -22,8 +22,7 @@ export const Header:React.FC<Props> = (props):ReactElement => {
       <Avatar
         source={{ uri: 'https://cactusthemes.com/blog/wp-content/uploads/2018/01/tt_avatar_small.jpg' }}
         resizeMode={'cover'}
-        height={70}
-        width={70}
+        size={'large'}
         rounded
         decorated
       />

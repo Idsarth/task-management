@@ -44,6 +44,9 @@ export const globalStyled = ({ theme, variantStyled }:Styled) => {
     justifyBetween: {
       justifyContent: 'space-between'
     },
+    justifyCenter: {
+      justifyContent: 'center'
+    },
     alignCenter: {
       alignItems: 'center'
     },
@@ -52,9 +55,23 @@ export const globalStyled = ({ theme, variantStyled }:Styled) => {
       width: 0.7,
       backgroundColor: theme.textSecondaryColor
     },
+
+
     card: {
+      backgroundColor: theme.backgroundCardColor,
+      paddingHorizontal: 10,
+      marginHorizontal: 5,
+      paddingVertical: 18,
       borderRadius: 10,
-      elevation: Platform.OS === 'android' ? 1 : 2
+      shadowColor: "#000",
+      shadowOffset: {
+        width: 0,
+        height: 1,
+      },
+      shadowOpacity: 0.18,
+      shadowRadius: 1.00,
+
+      elevation: 1,
     }
   })
 }

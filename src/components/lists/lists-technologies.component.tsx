@@ -6,6 +6,7 @@ import { useNavigation } from '@react-navigation/native'
 
 // Import components
 import { Technology } from '../technology.component'
+import { SizedBox } from '../common'
 
 // Import routes
 import { AppRoutes as Routes } from '../../navigation'
@@ -56,10 +57,13 @@ export const ListsTechnologies:React.FC = ():ReactElement => {
   }, [])
   const renderItem = ({ item }: ListRenderItemInfo<Technology>):ReactElement => {
     return (
-      <Technology 
-        {...item}
-        onPressed={() => onPressed(item.technologyId)}
-      />
+      <>
+        <Technology
+          {...item}
+          onPressed={() => onPressed(item.technologyId)}
+        />
+        <SizedBox height={10} />
+      </>
     )
   }
   return (

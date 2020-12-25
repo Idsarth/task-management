@@ -11,19 +11,30 @@ type Styled = {
 export const technologyStyled = ({ theme, variantStyled }: Styled) => {
 
   return StyleSheet.create({
+    card: {
+      backgroundColor: theme.backgroundScaffoldColor,
+    },
     image: {
-      height: 50,
-      width: 50
+      borderRadius: 10,
     },
     time: {
       backgroundColor: theme.errorColor,
-      borderRadius: 5,
+      alignSelf: 'flex-start',
       paddingHorizontal: 8,
-      paddingVertical: 4
+      paddingVertical: 4,
+      borderRadius: 5,
     },
     value: {
       color: theme.textErrorColor,
-      fontWeight: 'bold',
+      fontWeight: '600',
+    },
+    category: {
+      marginTop: 5
+    },
+    link: {
+      color: theme.textSecondaryColor,
+      fontSize: 14,
+      bottom: 1.5
     }
   })
 }
