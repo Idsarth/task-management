@@ -48,6 +48,10 @@ export const Technology:React.FC<Props> = (props): ReactElement => {
         </View>
 
         <ProgressBar progress={progress} />
+
+        <View style={styles.time}>
+          <Text style={styles.value}>{createdAt}</Text>
+        </View>
       </View>
     </TouchableOpacity>
   )

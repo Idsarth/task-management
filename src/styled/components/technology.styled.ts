@@ -14,6 +14,16 @@ export const technologyStyled = ({ theme, variantStyled }: Styled) => {
     image: {
       height: 50,
       width: 50
+    },
+    time: {
+      backgroundColor: theme.errorColor,
+      borderRadius: 5,
+      paddingHorizontal: 8,
+      paddingVertical: 4
+    },
+    value: {
+      color: theme.textErrorColor,
+      fontWeight: 'bold',
     }
   })
 }

@@ -32,7 +32,7 @@ export const Scaffold:React.FC<Props> = (props):ReactElement => {
       style={styles.scaffold}
       contentContainerStyle={{}}
     >
-      <SafeAreaView style={styles.scaffold}>
+      <SafeAreaView style={styles.safeArea}>
         {children}
       </SafeAreaView>
     </ScrollView>
