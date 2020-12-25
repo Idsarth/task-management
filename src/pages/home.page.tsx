@@ -4,12 +4,11 @@ import {
   View
 } from 'react-native'
 
-// Import widgets
-import { Scaffold, SizedBox } from '../widgets'
-
 // Import components
 import {
-  Header
+  Header,
+  SizedBox,
+  Scaffold
 } from '../components/common'
 import {
   LinealChart

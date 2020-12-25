@@ -4,7 +4,7 @@ import {
 } from 'react-native'
 
 // Import styled
-import { sizedBoxStyled, LightTheme } from '../styled'
+import { sizedBoxStyled, LightTheme } from '../../styled'
 
 type Props = {
   width?: number

@@ -3,14 +3,14 @@ import { StyleSheet } from 'react-native'
 // Import models
 import { ITheme } from '../../models'
 
-type Params = {
+type Styled = {
   theme: ITheme,
   variantStyled: {
 
   }
 }
 
-export const scaffoldStyled = ({ theme, variantStyled }: Params) => {
+export const scaffoldStyled = ({ theme, variantStyled }: Styled) => {
   const {} = variantStyled
   return StyleSheet.create({
     scaffold: {

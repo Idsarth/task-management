@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native'
+import { StyleSheet, Platform } from 'react-native'
 
 // Import models
 import { ITheme } from '../../models'
@@ -51,6 +51,10 @@ export const globalStyled = ({ theme, variantStyled }:Styled) => {
       height: '100%',
       width: 0.7,
       backgroundColor: theme.textSecondaryColor
+    },
+    card: {
+      borderRadius: 10,
+      elevation: Platform.OS === 'android' ? 1 : 2
     }
   })
 }

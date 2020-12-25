@@ -3,11 +3,11 @@ import {
   Text,
 } from 'react-native'
 
-// Import widgets
-import { Scaffold } from '../../widgets'
-
 // Import components
-import { Button } from '../../components/common'
+import { 
+  Button,
+  Scaffold
+} from '../../components/common'
 
 // Import hooks
 import { useTheme } from '../../hooks'

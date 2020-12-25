@@ -5,10 +5,10 @@ import {
 } from 'react-native'
 
 // Import hooks
-import { useTheme } from '../hooks'
+import { useTheme } from '../../hooks'
 
 // Import styled
-import { scaffoldStyled } from '../styled'
+import { scaffoldStyled } from '../../styled'
 
 type Props = {
   backgroundColor?: string

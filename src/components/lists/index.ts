@@ -1,0 +1,1 @@
+export { ListsTechnologies } from './lists-technologies.component'

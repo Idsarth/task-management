@@ -3,8 +3,18 @@ import {
   Text
 } from 'react-native'
 
+// Import components
+import { ListsTechnologies } from '../../components/lists'
+import {
+  Scaffold
+} from '../../components/common'
+
 export const StudentPage:React.FC = ():ReactElement => {
   return (
-    <Text>StudentPage</Text>
+    <Scaffold>
+      <Text>StudentPage</Text>
+
+      <ListsTechnologies />
+    </Scaffold>
   )
 }

@@ -5,10 +5,10 @@ import {
 } from 'react-native'
 
 // Import components
-import { Avatar } from './avatar.component'
-
-// Import widgets
-import { SizedBox } from '../../widgets'
+import {
+  Avatar,
+  SizedBox
+} from '.'
 
 // Import styled
 import { globalStyled, LightTheme } from '../../styled'

@@ -1,10 +1,14 @@
-import React, { ReactElement } from 'react'
+import React, { ReactElement, useCallback } from 'react'
 import {
   FlatList, ListRenderItemInfo,
 } from 'react-native'
+import { useNavigation } from '@react-navigation/native'
 
 // Import components
 import { Technology } from '../technology.component'
+
+// Import routes
+import { AppRoutes as Routes } from '../../navigation'
 
 interface Technology {
   technologyId: number
@@ -46,9 +50,16 @@ const technologies: Array<Technology> = [
 ]
 
 export const ListsTechnologies:React.FC = ():ReactElement => {
+  const { navigate } = useNavigation()
+  const onPressed = useCallback((technologyId: number) => {
+    // navigate(Routes.)
+  }, [])
   const renderItem = ({ item }: ListRenderItemInfo<Technology>):ReactElement => {
     return (
-      <Technology />
+      <Technology 
+        {...item}
+        onPressed={() => onPressed(item.technologyId)}
+      />
     )
   }
   return (
