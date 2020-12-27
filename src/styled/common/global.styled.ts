@@ -15,9 +15,9 @@ export const globalStyled = ({ theme, variantStyled }:Styled) => {
       fontWeight: 'bold'
     },
     title: {
+      color: theme.textPrimaryColor,
       fontWeight: 'bold',
       fontSize: 22,
-      color: theme.textPrimaryColor
     },
     subTitle: {
       fontWeight: '600',
@@ -27,16 +27,22 @@ export const globalStyled = ({ theme, variantStyled }:Styled) => {
       fontSize: 16,
     },
     smallSuccess: {
+      color: theme.textSuccessColor,
       fontSize: 16,
-      color: theme.textSuccessColor
     },
     paragraph: {
       color: theme.textSecondaryColor,
       fontSize: 16
     },
+
+
     // LAYOUT **********
+    flex: {
+      flexGrow: 1
+    },
     container: {
-      paddingHorizontal: 15
+      paddingHorizontal: 15,
+      flex: 1,
     },
     row: {
       flexDirection: 'row'
@@ -51,12 +57,13 @@ export const globalStyled = ({ theme, variantStyled }:Styled) => {
       alignItems: 'center'
     },
     divider: {
+      backgroundColor: theme.textSecondaryColor,
       height: '100%',
       width: 0.7,
-      backgroundColor: theme.textSecondaryColor
     },
 
 
+    // DESIGN *******
     card: {
       backgroundColor: theme.backgroundCardColor,
       paddingHorizontal: 10,
